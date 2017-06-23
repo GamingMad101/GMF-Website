@@ -1,7 +1,2 @@
-# Gmod-Fraternity
-
-This is a Gamemode for GMOD based around socialising.  
-
-Features currently include:  
-• Money System  
-• Team Death Match style game  
+This is the website, find the actual gamemode here
+https://github.com/GamingMad101/Gmod-Fraternity
