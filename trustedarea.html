@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>GMod Fraternal</title>
-    <meta name="generator" content="Serif WebPlus X7 (15,0,0,24)">
+    <title>Suggest an Idea</title>
+    <meta name="generator" content="Serif WebPlus X7">
     <meta name="viewport" content="width=960">
     <link rel="stylesheet" type="text/css" href="wpscripts/wpstyles.css">
     <style type="text/css">
@@ -39,12 +39,18 @@
       .OBJ-4:active span,a:link.OBJ-4.Activated span,a:link.OBJ-4.Down span,a:visited.OBJ-4.Activated span,a:visited.OBJ-4.Down span,.OBJ-4.Activated span,.OBJ-4.Down span { color:#7ea41a; }
       .OBJ-4.Disabled span,a:link.OBJ-4.Disabled span,a:visited.OBJ-4.Disabled span,a:hover.OBJ-4.Disabled span,a:active.OBJ-4.Disabled span { color:#000000; }
       .OBJ-5 { border:none;padding:none; }
-      .P-1 { margin-left:48.0px;text-indent:-15.0px; }
+      .OBJ-6 { margin:0;background:transparent url('wpimages/wp135035c2.png') no-repeat left top;border:1px solid #51800c;border-radius:7px / 7px; }
+      .P-1 { text-align:center;font-family:"Arial", sans-serif;font-style:normal;font-weight:700;color:#ffffff;text-decoration:none;font-size:18.7px; }
+      .C-1 { font-family:"Arial", sans-serif;color:#ffffff; }
+      .OBJ-7 { border:1px solid #51800c;border-radius:2px / 2px;background:#ffffff;font-family:Arial;text-align:left;font-size:12px;color:#626262; }
+      .OBJ-8 { border:1px solid #51800c;border-radius:2px / 2px;background:#ebf3da;font-family:Arial;text-align:center;font-size:12px;color:#51800c; }
     </style>
     <script type="text/javascript" src="wpscripts/jquery.js"></script>
+    <script type="text/javascript" src="wpscripts/jquery.validate.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
       $("a.ActiveButton").bind({ mousedown:function(){$(this).addClass('Activated');}, mouseleave:function(){ $(this).removeClass('Activated');}, mouseup:function(){$(this).removeClass('Activated');}});
+      $("#form_1").validate({ onkeyup: false, showErrors: function(errorMap, errorList) { if (errorList.length) alert(errorList[0].message); }, rules: { 'Email': { required: true, email: true } , 'Idea': { required: true }  }, messages: { 'Email': { required: "put yo email in so I can speak to you" } , 'Idea': { required: "Ideas needed" }  } });
       });
     </script>
   </head>
@@ -52,7 +58,7 @@
     <div id="divMain" style="background:transparent;margin-left:auto;margin-right:auto;position:relative;width:960px;height:1000px;">
       <img src="wpimages/wp5e03eb6f_06.png" alt="" width="960" height="114" style="position:absolute;left:0px;top:0px;width:960px;height:114px;">
       <div class="OBJ-1" style="position:absolute;left:0px;top:98px;width:185px;height:902px;">
-        <a title="Home" href="index.html" id="nav_35_B1" class="OBJ-2 ActiveButton Down" style="display:block;position:absolute;left:37px;top:0px;width:111px;height:40px;">
+        <a title="Home" href="index.html" id="nav_35_B1" class="OBJ-2 ActiveButton" style="display:block;position:absolute;left:37px;top:0px;width:111px;height:40px;">
           <span>Home</span>
         </a>
         <a title="Forum" href="forum.html" id="nav_35_B2" class="OBJ-2 ActiveButton" style="display:block;position:absolute;left:37px;top:42px;width:111px;height:40px;">
@@ -61,28 +67,40 @@
         <a title="Planned Features" href="plannedfeatures.html" id="nav_35_B3" class="OBJ-3 ActiveButton" style="display:block;position:absolute;left:7px;top:84px;width:171px;height:40px;">
           <span>Planned&nbsp;Features</span>
         </a>
-        <a title="For people with the Trusted tag on forums" href="trustedarea.html" id="nav_35_B4" class="OBJ-4 ActiveButton" style="display:block;position:absolute;left:11px;top:126px;width:162px;height:40px;">
+        <a title="For people with the Trusted tag on forums" href="trustedarea.html" id="nav_35_B4" class="OBJ-4 ActiveButton Down" style="display:block;position:absolute;left:11px;top:126px;width:162px;height:40px;">
           <span>Suggest&nbsp;an&nbsp;Idea</span>
         </a>
       </div>
       <div style="position:absolute;left:50px;top:976px;width:84px;height:24px;">
-        <a href="http://www.reddit.com/submit?url=https://gamingmad101.github.io/Gmod-Fraternity/index.html"><img src="wpimages/wp22b41623_06.png" width="16" height="16" alt="Share on Reddit" title="Share on Reddit" style="position:absolute;top:4px;left:4px;"></a>
-        <a href="http://www.facebook.com/sharer.php?u=https://gamingmad101.github.io/Gmod-Fraternity/index.html"><img src="wpimages/wpf8d18264_06.png" width="16" height="16" alt="Share on Facebook" title="Share on Facebook" style="position:absolute;top:4px;left:24px;"></a>
-        <a href="https://twitter.com/share?url=https://gamingmad101.github.io/Gmod-Fraternity/index.html"><img src="wpimages/wpfe6aa5af_06.png" width="16" height="16" alt="Share on Twitter" title="Share on Twitter" style="position:absolute;top:4px;left:44px;"></a>
-        <a href="mailto:?body=https://gamingmad101.github.io/Gmod-Fraternity/index.html"><img src="wpimages/wp8287ae20_06.png" width="16" height="16" alt="Share via e-mail" title="Share via e-mail" style="position:absolute;top:4px;left:64px;"></a>
+        <a href="http://www.reddit.com/submit?url=https://gamingmad101.github.io/Gmod-Fraternity/trustedarea.html"><img src="wpimages/wp22b41623_06.png" width="16" height="16" alt="Share on Reddit" title="Share on Reddit" style="position:absolute;top:4px;left:4px;"></a>
+        <a href="http://www.facebook.com/sharer.php?u=https://gamingmad101.github.io/Gmod-Fraternity/trustedarea.html"><img src="wpimages/wpf8d18264_06.png" width="16" height="16" alt="Share on Facebook" title="Share on Facebook" style="position:absolute;top:4px;left:24px;"></a>
+        <a href="https://twitter.com/share?url=https://gamingmad101.github.io/Gmod-Fraternity/trustedarea.html"><img src="wpimages/wpfe6aa5af_06.png" width="16" height="16" alt="Share on Twitter" title="Share on Twitter" style="position:absolute;top:4px;left:44px;"></a>
+        <a href="mailto:?body=https://gamingmad101.github.io/Gmod-Fraternity/trustedarea.html"><img src="wpimages/wp8287ae20_06.png" width="16" height="16" alt="Share via e-mail" title="Share via e-mail" style="position:absolute;top:4px;left:64px;"></a>
       </div>
       <iframe id="webresource_3" src="about:blank" class="OBJ-5" style="position:absolute;left:5px;top:818px;width:185px;height:182px;"></iframe>
       <noscript style="position:absolute;left:5px;top:818px;width:185px;height:182px;">This web page requires a JavaScript enabled browser.</noscript>
-      <iframe src="http://www.youtube.com/embed/dQw4w9WgXcQ?version=3&amp;modestbranding=1&amp;disablekb=1&amp;origin=https://gamingmad101.github.io/Gmod-Fraternity/" class="OBJ-5" style="position:absolute;left:185px;top:98px;width:775px;height:428px;"></iframe>
-      <div style="position:absolute;left:185px;top:526px;width:775px;height:283px;overflow:hidden;">
-        <p class="Body">Gmod Fraternity is a gamemode framework based about mini games and socialising.</p>
-        <p class="Body">This website includes links to the developer wiki, and also information for server owners.</p>
-        <p class="Body">Current Features include:</p>
-        <ul style="list-style-type:disc;margin:0;padding:0;">
-          <li class="Body P-1" style="text-indent:0;margin-left:48px;">Saving Money System</li><li class="Body P-1" style="text-indent:0;margin-left:48px;">Custom HUD</li><li class="Body P-1" style="text-indent:0;margin-left:48px;">A Team Based Combine VS Resistance Gamemode</li>
-        </ul>
-        <p class="Body">See planned Features HERE</p>
-      </div>
+      <form id="form_1" name="Idea Submitter" action="http://www.serifwebresources.com/form.php?uid=e18110aa7cfa4831b2a36a18d954aaa9" accept-charset="UTF-8" method="post" target="_self" enctype="multipart/form-data" class="OBJ-6" style="position:absolute;left:190px;top:102px;width:335px;height:359px;">
+        <input type="hidden" name="subjectField" value="Idea">
+        <input type="hidden" name="xmlFormData" value="aJuVx/Uktg04Mz8vxuOMe8snZTmn0vs4fsI8eEvFE2hQZbL8QSRqD+Kq+6TYDCQWdD7iA3zhlzqyyRKuDOsfmDs2ki64/34VqYA5wcUHYpZQ6N1+IxXi+LCmac6tFHcuE1eaNQ3gx3RnhUZ3zecW91xi8ZGgMYrOoN+dCwBULNuNZOi/yyEcdVdM7Ra2NSZ/00eJyDVm7y89Jc8EtqgCSkc0i07PT4IbdV00GnvjdweKbZmeyqqwmHpXv9431qPtxR1g7IMmj9GRi/31PmSR8Gm/Rtclak69TSTAQHQ5cBY/iPE22TZDG3OzbOxvb2qzl+BFMnZVEOsob1PAcSyCoXpL8Yfxv86hzJ+zfE3mu/LOewW9HXfRwnFnfvzr9kCySjxEnMiKuu4dSt+fl32zKVpFDtsqgWkY2lUnU5Ek6r4GGSztdztoVXdP+2NjFLm7LLEI02Mk88GKcE5KLx7egC1mntEFUyNmj4y9V71K+Z+kIAYXzBAGlXtFl9jnl3xIQx6+6OcQGxOdIlRVtiaHJ9SUz6IQ0YOVZhagyvgmykFDcXMyv3uzFJSOvQSN7RFhl1Gcjt+7Pc5RfoKq+30l3xMh3lYij7EqiR/he/VHmv7h77Q0tKqaQkVykI6XYwKBCDN2WJ+ci57u22ObZY21H7ORZCVani1nZg2YXz7c740">
+        <div style="position:absolute;left:15px;top:15px;width:305px;height:23px;overflow:hidden;">
+          <p class="Body P-1">Idea Submitter</p>
+        </div>
+        <div style="position:absolute;left:15px;top:53px;width:303px;height:19px;overflow:hidden;">
+          <p class="Body C-1">Email (required)</p>
+        </div>
+        <input name="Email" class="OBJ-7" maxlength="32" autocomplete="on" style="position:absolute;left:15px;top:72px;width:303px;height:22px;">
+        <div style="position:absolute;left:15px;top:111px;width:303px;height:19px;overflow:hidden;">
+          <p class="Body C-1">Idea (required)</p>
+        </div>
+        <textarea name="Idea" class="OBJ-7" style="position:absolute;left:15px;top:130px;width:303px;height:87px;"></textarea>
+        <div style="position:absolute;left:73px;top:234px;width:190px;height:69px;">
+          <img width="190" height="45" alt="Enter CAPTCHA solution" src="http://www.serifwebresources.com/util/img_verify.php?gen_word=1&id=captcha_5">
+          <br>
+          <input type="text" id="captcha_5" name="captcha_5" style="width:152px;">
+          <a title="Listen to audio CAPTCHA" href="http://www.serifwebresources.com/util/audio/audio.php?lang=en" style="text-decoration:none;"><img alt="Listen to audio CAPTCHA" src="http://www.serifwebresources.com/media/icons/audio-desc.png" style="vertical-align:middle;float:right;"></a>
+        </div>
+        <input name="Submit Button" class="OBJ-8" type="submit" value="Submit" style="position:absolute;left:15px;top:318px;width:303px;height:22px;">
+      </form>
     </div>
     <script type="text/javascript">document.getElementById('webresource_3').src='http://www.serifwebresources.com/control.php?lang=en&uid=30108ed0ebfa097d35f1918839eaf9f13f53f21f&swr_base=' + location.href + '&noschemecolours=1';</script>
   </body>
